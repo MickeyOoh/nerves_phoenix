@@ -1,0 +1,24 @@
+# App artifacts
+/firmware/_build
+/firmware/db
+/firmware/deps
+/firmware/*.ez
+firmware/mix.lock
+firmware/mix.lock.*
+
+# Nerves images
+/firmware/_images
+
+# Generate on crash by the VM
+firmware/erl_crash.dump
+
+# Where 3rd-party dependencies like ExDoc output generated docs.
+/firmware/doc
+
+# If you run "mix test --cover", coverage assets end up here.
+/firmware/cover
+
+# ignore everything in rel/ except config files
+firmware/rel/*
+!firmware/rel/config.exs
+!firmware/rel/vm.args
